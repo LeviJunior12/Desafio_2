@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Digital House Foods</string>
+    <string name="tfEmail">Email</string>
+    <string name="tfPassword">Password</string>
+    <string name="btnLogin">LOG IN</string>
+    <string name="btnRegister">REGISTER</string>
 </resources>
