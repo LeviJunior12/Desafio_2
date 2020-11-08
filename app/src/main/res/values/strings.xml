@@ -4,4 +4,6 @@
     <string name="tfPassword">Password</string>
     <string name="btnLogin">LOG IN</string>
     <string name="btnRegister">REGISTER</string>
+    <string name="tfName">Name</string>
+    <string name="tfRepeatPassword">Repeate password</string>
 </resources>
