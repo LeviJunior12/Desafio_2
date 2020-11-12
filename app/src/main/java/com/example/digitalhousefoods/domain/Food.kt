@@ -1,4 +1,6 @@
 package com.example.digitalhousefoods.domain
 
-data class Food(val name: String, val describe: String) {
+import java.io.Serializable
+
+data class Food(val img: Int, val describe: String): Serializable {
 }

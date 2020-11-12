@@ -6,4 +6,7 @@
     <string name="btnRegister">REGISTER</string>
     <string name="tfName">Name</string>
     <string name="tfRepeatPassword">Repeate password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pratos_principais">Pratos principais</string>
 </resources>
