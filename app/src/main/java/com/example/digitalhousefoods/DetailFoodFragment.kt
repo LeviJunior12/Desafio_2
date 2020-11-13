@@ -28,6 +28,10 @@ class DetailFoodFragment : Fragment() {
         view.tv_name.text = food.name
         view.tv_describe.text = food.describe
 
+        view.toolbar_icon.setNavigationOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         return view
     }
 
