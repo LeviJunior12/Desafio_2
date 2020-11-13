@@ -4,16 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.digitalhousefoods.domain.Restaurant
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.fragment_detail_food.view.*
 import kotlinx.android.synthetic.main.fragment_restaurant.view.*
-import kotlinx.android.synthetic.main.fragment_restaurant.view.toolbar_icon
 import kotlinx.android.synthetic.main.fragment_restaurant.view.tv_name
 
 class RestaurantFragment : Fragment() {
@@ -37,6 +32,11 @@ class RestaurantFragment : Fragment() {
             view.rvFood.adapter = adapter
             view.rvFood.layoutManager = LinearLayoutManager(this.activity)
             view.rvFood.setHasFixedSize(false)
+
+            view.toolbar_icon.setNavigationOnClickListener {
+                var intent = Intent(this.context, MainActivity::class.java)
+                startActivity(intent)
+            }
 
             return view
     }

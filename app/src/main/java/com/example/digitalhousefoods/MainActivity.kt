@@ -1,7 +1,10 @@
 package com.example.digitalhousefoods
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.digitalhousefoods.domain.Food
@@ -27,6 +30,22 @@ class MainActivity : AppCompatActivity() {
         rvRestaurant.adapter = adapter
         rvRestaurant.layoutManager = LinearLayoutManager(this)
         rvRestaurant.setHasFixedSize(false)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_item, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        var itemView = item.itemId
+        when (itemView) {
+            R.id.logout -> {
+                var intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        return false
     }
 
     private fun getAllRestaurant(): ArrayList<Restaurant> {
