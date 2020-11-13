@@ -2,16 +2,17 @@ package com.example.digitalhousefoods
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.example.digitalhousefoods.domain.Food
 import com.example.digitalhousefoods.domain.Restaurant
-import kotlinx.android.synthetic.main.fragment_restaurant.*
 
 class RestaurantMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurant_menu)
+
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.purple_700))
 
         val restaurant = intent.getSerializableExtra("restaurant") as? Restaurant
         val food = intent.getSerializableExtra("food") as? Food

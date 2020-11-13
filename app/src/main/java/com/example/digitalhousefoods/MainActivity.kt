@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.digitalhousefoods.domain.Food
 import com.example.digitalhousefoods.domain.Restaurant
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_restaurant.view.*
 
 class MainActivity : AppCompatActivity() {
 

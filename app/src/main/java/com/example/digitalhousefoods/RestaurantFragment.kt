@@ -1,17 +1,20 @@
 package com.example.digitalhousefoods
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
+import android.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.digitalhousefoods.domain.Food
 import com.example.digitalhousefoods.domain.Restaurant
-import kotlinx.android.synthetic.main.fragment_restaurant.*
+import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.fragment_detail_food.view.*
 import kotlinx.android.synthetic.main.fragment_restaurant.view.*
+import kotlinx.android.synthetic.main.fragment_restaurant.view.toolbar_icon
+import kotlinx.android.synthetic.main.fragment_restaurant.view.tv_name
 
 class RestaurantFragment : Fragment() {
 
